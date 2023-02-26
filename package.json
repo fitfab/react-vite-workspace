@@ -1,0 +1,20 @@
+{
+  "name": "@fitfab/react-vite-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "main": "index.js",
+  "author": "Miguel Julio",
+  "license": "MIT",
+  "scripts": {
+    "dev:admin": "yarn workspace @fitfab/admin dev",
+    "dev:uix": "yarn workspace @fitfab/uix dev",
+    "build:uix": "yarn workspace @fitfab/uix build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "typescript": "^4.9.3"
+  }
+}
