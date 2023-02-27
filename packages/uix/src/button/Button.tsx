@@ -7,8 +7,9 @@ export const Button = ({ children, ...rest }: ButtonProps) => {
   return (
     <button
       style={{
-        backgroundColor: "#cf9",
-        border: "4px solid #ae68da",
+        backgroundColor: "#70b42b",
+        color: "#fff",
+        border: "2px solid #ae68da",
         borderRadius: ".5rem",
         padding: ".5rem 1rem",
         cursor: "pointer",
