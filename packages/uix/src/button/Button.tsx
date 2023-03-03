@@ -1,9 +1,12 @@
 import "./button.css";
 
-export interface ButtonProps {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
-export const Button = ({ children, ...rest }: ButtonProps) => {
+export const Button = ({
+  children,
+}: React.ButtonHTMLAttributes<HTMLButtonElement>) => {
   return (
     <button
       style={{
@@ -14,7 +17,6 @@ export const Button = ({ children, ...rest }: ButtonProps) => {
         padding: ".5rem 1rem",
         cursor: "pointer",
       }}
-      {...rest}
     >
       {children}
     </button>

@@ -23,5 +23,6 @@
     {
       "path": "packages/uix"
     }
-  ]
+  ],
+  "exclude": ["node_modules", "dist"]
 }
