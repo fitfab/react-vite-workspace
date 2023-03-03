@@ -7,9 +7,10 @@ import dts from "vite-plugin-dts";
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/main.ts"),
-      formats: ["es"],
+      entry: path.resolve(__dirname, "src/index.ts"),
       name: "uix",
+      fileName: "uix",
+      formats: ["es"],
     },
     rollupOptions: {
       external: ["react"],
