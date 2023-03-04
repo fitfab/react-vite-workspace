@@ -1,4 +1,4 @@
 {
   "packages/**/src/*.{ts,tsx,js,css,html}": "prettier --write",
-  "packages/**/src/*.{ts,tsx,js}": "yarn lint"
+  "packages/**/src/*.{ts,tsx,js}": "eslint"
 }
