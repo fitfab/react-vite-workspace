@@ -12,11 +12,21 @@
     "dev:admin": "yarn workspace @fitfab/admin dev",
     "dev:uix": "yarn workspace @fitfab/uix dev",
     "dev": "concurrently 'yarn dev:uix' 'yarn dev:admin'",
-    "build:uix": "yarn workspace @fitfab/uix build"
+    "build:uix": "yarn workspace @fitfab/uix build",
+    "build:admin": "yarn workspace @fitfab/admin build",
+    "lint": "eslint . --ext .ts,.tsx"
   },
   "devDependencies": {
     "@types/node": "^18.14.2",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
     "concurrently": "^7.6.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.8.4",
     "typescript": "^4.9.3"
   }
 }

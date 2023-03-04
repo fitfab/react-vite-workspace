@@ -16,13 +16,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "references": [
-    {
-      "path": "packages/admin"
-    },
-    {
-      "path": "packages/uix"
-    }
-  ],
+  "include": ["packages/**/src/*"],
   "exclude": ["node_modules", "dist"]
 }
