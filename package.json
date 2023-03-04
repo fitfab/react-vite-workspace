@@ -14,7 +14,7 @@
     "dev": "concurrently 'yarn dev:uix' 'yarn dev:admin'",
     "build:uix": "yarn workspace @fitfab/uix build",
     "build:admin": "yarn workspace @fitfab/admin build",
-    "lint": "eslint . --ext .ts,.tsx",
+    "lint": "yarn workspaces run lint",
     "prepare": "husky install"
   },
   "devDependencies": {
