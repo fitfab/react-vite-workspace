@@ -5,7 +5,7 @@ import reactLogo from './assets/react.svg';
 
 function App() {
   const [count, setCount] = useState(0);
-  const bar = 'foooo';
+  const bar = 'foooosss';
   console.count('render');
   return (
     <div className="App">

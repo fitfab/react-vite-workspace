@@ -1,8 +1,0 @@
-node_modules/
-dist/
-.prettierrc.js
-.eslintrc.js
-env.d.ts
-packages/admin/dist
-packages/uix/dist
-packages/node_modules

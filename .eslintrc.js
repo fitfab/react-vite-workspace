@@ -14,7 +14,12 @@ module.exports = {
     // to override other configs.
     'eslint-config-prettier',
   ],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint/eslint-plugin'],
   settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
     react: {
       // Tells eslint-plugin-react to automatically detect the version of React to use.
       version: 'detect',
@@ -26,7 +31,11 @@ module.exports = {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     },
+    typescript: {
+      project: './tsconfig.json',
+    },
   },
+  ignorePatterns: ['node_modules/', 'dist/', '.prettierrc.js', '.eslintrc.js', 'env.d.ts', '.eslintrc.js'],
   rules: {
     // Add your own rules here to override ones from the extended configs.
   },
