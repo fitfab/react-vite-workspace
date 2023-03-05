@@ -4,7 +4,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   primary?: boolean;
 }
 export const Button = ({ children, primary = true }: ButtonProps) => {
-  const bar = 'foolings';
+  const bar = 'fool';
   const bgColor = primary ? 'orange' : '#70b42b';
   return (
     <button
