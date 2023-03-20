@@ -37,6 +37,8 @@ module.exports = {
   },
   ignorePatterns: ['node_modules/', 'dist/', '.prettierrc.js', '.eslintrc.js', 'env.d.ts', '.eslintrc.js'],
   rules: {
-    // Add your own rules here to override ones from the extended configs.
+    // Note: you must disable the base rule as it can report incorrect errors
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
   },
 };
