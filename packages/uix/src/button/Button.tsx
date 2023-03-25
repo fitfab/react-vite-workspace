@@ -3,7 +3,7 @@ import './button.css';
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   primary?: boolean;
 }
-export const Button = ({ children, primary = true }: ButtonProps) => {
+export const Button = ({ children, primary = true, ...rest }: ButtonProps) => {
   const bgColor = primary ? 'orange' : '#70b42b';
   return (
     <button
@@ -15,6 +15,7 @@ export const Button = ({ children, primary = true }: ButtonProps) => {
         padding: '.5rem 1rem',
         cursor: 'pointer',
       }}
+      {...rest}
     >
       {children}
     </button>
