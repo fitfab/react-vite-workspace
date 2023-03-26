@@ -1,5 +1,5 @@
 {
-  "name": "@fitfab/admin",
+  "name": "@fitfab/app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint . --fix"
   },
   "dependencies": {
     "react": "^18.2.0",
