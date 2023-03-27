@@ -9,11 +9,11 @@
   "author": "Miguel Julio",
   "license": "MIT",
   "scripts": {
-    "dev:admin": "yarn workspace @fitfab/admin dev",
-    "dev:uix": "yarn workspace @fitfab/uix dev",
-    "dev": "concurrently 'yarn dev:uix' 'yarn dev:admin'",
-    "build:uix": "yarn workspace @fitfab/uix build",
-    "build:admin": "yarn workspace @fitfab/admin build",
+    "dev:app": "lerna run dev --scope=@fitfab/app",
+    "dev:uix": "lerna run dev --scope=@fitfab/uix",
+    "dev": "concurrently 'yarn dev:uix' 'yarn dev:app'",
+    "build:uix": "lerna run build --scope=@fitfab/uix",
+    "build:app": "lerna run build --scope=@fitfab/app",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "husky install"
