@@ -11,6 +11,8 @@ Within the "packages" folder we have:
 
 npx lerna run build
 
-## Lint-staged
+### References
 
-ref: https://github.com/okonet/lint-staged#how-to-use-lint-staged-in-a-multi-package-monorepo
+Lint-staged: https://github.com/okonet/lint-staged#how-to-use-lint-staged-in-a-multi-package-monorepo
+
+Remix Deployment tagets: https://andre-landgraf.dev/blog/2022-12-03_different-dimensions-of-remix-deploy-targets
